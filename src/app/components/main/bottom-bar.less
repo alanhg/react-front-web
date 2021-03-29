@@ -1,0 +1,54 @@
+.bottomBar {
+  background-color: #333f48;
+  height: 48px;
+  line-height: 35px;
+  color: #fff;
+  padding: 15px 155px 47px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  z-index: 10;
+
+  ul {
+    list-style: none;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 0;
+
+    li {
+      float: left;
+      margin-right: 30px;
+    }
+  }
+}
+
+.right {
+  float: right;
+
+  img {
+    margin-right: 6px;
+  }
+
+  span:not(:last-child)::after {
+    content: '|';
+    color: #6f7170;
+    margin: 0 15px;
+  }
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.language-selector {
+  text-transform: none;
+  background-color: inherit;
+  height: 30px;
+  width: 150px;
+  padding-left: 5px;
+  border: none;
+
+  &:focus {
+    border: none;
+  }
+}

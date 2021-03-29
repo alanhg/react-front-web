@@ -1,0 +1,54 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "target": "es6",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": false,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "noImplicitAny": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "outDir": "dist",
+    "lib": [
+      "es2015",
+      "es2017",
+      "es2019",
+      "dom",
+      "es2018.intl",
+      "esnext.intl"
+    ],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "types": [
+      "webpack-env",
+      "jest"
+    ],
+    "allowJs": true,
+    "checkJs": false,
+    "baseUrl": "./",
+    "paths": {
+      "app/*": [
+        "src/app/*"
+      ]
+    },
+    "importHelpers": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noErrorTruncation": true
+  },
+  "include": [
+    "src/app/typings.d.ts",
+    "src/app/typings-external-files.d.ts",
+    "src/app/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "extends": "stylelint-config-standard",
+  "plugins": [
+    "stylelint-no-unsupported-browser-features"
+  ],
+  "rules": {
+    "plugin/no-unsupported-browser-features": [
+      true,
+      {
+        "severity": "warning"
+      }
+    ],
+    "number-leading-zero": "never",
+    "no-descending-specificity": null,
+    "block-no-empty": null,
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": [
+          "/global/"
+        ]
+      }
+    ]
+  }
+}

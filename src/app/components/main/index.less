@@ -1,0 +1,131 @@
+@import 'src/app/thememe/theme';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-width: 1280px;
+  min-height: 100vh;
+}
+
+section.container {
+  display: flex;
+  align-items: stretch;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  min-height: calc(100vh - 60px - 62px);
+
+  div.sidebar {
+    font-family: @font-bold;
+    box-shadow: 0 0 10px #e8e8e8;
+
+    :global {
+      .ant-menu-vertical {
+        border-right: 0 !important;
+      }
+    }
+
+    .active-button {
+      padding: 7px 20px;
+      border: 2px solid #ddd;
+      border-radius: 7px;
+      margin-right: 3px;
+      color: #333f48;
+    }
+
+    .un-active-button {
+      padding: 7px 20px;
+      margin-right: 3px;
+      color: #999;
+      cursor: pointer;
+    }
+
+    .disclaimer-div {
+      line-height: normal;
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-bottom: 18px;
+      background-color: #fff;
+      min-height: 300px;
+      margin-top: 10px;
+
+      span:first-child {
+        font-size: 16px;
+        font-family: @font-bold;
+      }
+
+      .disclaimer-text {
+        display: block;
+        color: @text-gray;
+        font-size: @font-size-base;
+        font-family: @font-regular;
+        width: 100%;
+        height: 100%;
+        outline: none;
+        resize: none;
+        border: 0;
+        white-space: pre-wrap;
+      }
+    }
+
+    .ant-menu.ant-menu-light.ant-menu-root.ant-menu-vertical {
+      padding-top: 30px;
+      border: none;
+      font-weight: bold;
+      padding-left: 5px;
+    }
+
+    li {
+      text-transform: capitalize;
+      font-weight: 700;
+      height: 100%;
+      margin-top: 0;
+    }
+  }
+
+  div.content {
+    overflow-x: hidden;
+    flex: 1;
+  }
+
+  .collapsed-menu {
+    width: 24px;
+    background: #fff;
+    border: 1px solid #efefef;
+    box-shadow: 0 1px 5px -1px rgba(188, 188, 188, .5);
+    color: #3e8ddd;
+    font-weight: 700;
+    margin-right: 10px;
+    font-family: @font-bold;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    > span {
+      display: block;
+      width: 120px;
+      transform: rotate(-90deg);
+      position: relative;
+      left: -50px;
+      top: 200px;
+    }
+  }
+}
+
+.back-top {
+  > div {
+    line-height: 35px;
+    border-radius: 4px;
+    background-color: #999;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  > :hover {
+    background-color: @red;
+    transition: background-color .5s;
+  }
+}
